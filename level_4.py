@@ -8,8 +8,10 @@ import re
 import urllib
 link = 'http://www.pythonchallenge.com/pc/def/linkedlist.php?nothing='
 number = '12345'
-for i in range(0,400):
+#number = '8022'
+while number == number:
+    
     url = urllib.request.urlopen(link+number)
     msg = url.read()
     number = ''.join(re.findall('[1-9]',msg.decode("utf-8")))
-    print(str(i) +': '+msg.decode("utf-8"))
+    print(msg.decode("utf-8"))
