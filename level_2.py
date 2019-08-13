@@ -1,6 +1,6 @@
 #level_2.py
 import re
-mess = open('mess.txt', 'r')
+mess = open('/home/pdi/Python-Challenge/Mess.txt', 'r')
 
 contenido = mess.read()
 
